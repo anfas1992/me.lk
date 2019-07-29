@@ -8,17 +8,42 @@
     position: fixed;
     background-color: #41b3a3;
 }
-.cside a {
+.metitle {padding: 80px 0 0 10px;}.metitle a {
+    position: relative;
+    border-style: groove;
+    border-color: coral;
+    border-width: 2px;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    font-size: 30px;
+    padding: 5px;
+}
+
+nav {
+    position: relative;
+    padding: 100px 0 0 10px; 
+}
+nav li {display: flex; padding:10px; height: 100px; width: auto;}
+nav a {
+    background: none;
+    padding: 5px;
     text-decoration: none;
     font-family: 'Fira Code', monospace;
     color: #fff;
     font-size: 20px;
-    margin-top: 89px;
-    position: relative;
-}
-
-.nav ul {
-
+    top: -100px;
+    left: 0;
+    background: none;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin:    0 0;
+    -ms-transform-origin:     0 0;
+    -o-transform-origin:      0 0;
+    
+    -webkit-transform: rotate(270deg); 
+    -moz-transform:    rotate(270deg); 
+    -ms-transform:     rotate(270deg); 
+    -o-transform:      rotate(270deg); 
 }
 
 
