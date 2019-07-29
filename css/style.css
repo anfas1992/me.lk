@@ -111,3 +111,30 @@ nav a {
     height: 400px;
     position: relative;
 }
+.worktitle h1{
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    position: relative;
+    padding: 2% 0 0 40%;
+    font-size: 5vh;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+
+
+.project div{
+            width: 40%;
+            height: auto;
+            background:#676470;
+            transition:all 0.3s ease;
+            float: left;
+            margin: 5% 5% 0 5% ;
+            position: relative;
+}.fade{opacity:0.7;}.fade:hover{opacity:1;}
+
+.project div img {
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
