@@ -1,0 +1,37 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+.cside{
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    background-color: #41b3a3;
+}
+.cside a {
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 89px;
+    position: relative;
+}
+
+.nav ul {
+
+}
+
+
+
+
+.chome,.cmc,.cwork,.ccme,.csocial {
+    width: 90%;
+    height: 100vh;
+    padding: 0 0 0 10%;
+}
+.chome{background-color: #7fc6b6;}
+.cmc{background-color: #e27d60;}
+.cwork{background-color: #e8a87c;}
+.ccme{background-color: #c38d9e;}
+.csocial{background-color: #68afa8; height: 50vh !important;}
+
