@@ -3,12 +3,12 @@
     padding:0;  
 }
 .cside{
-    width: 10%;
+    width: auto;
     height: 100vh;
     position: fixed;
     background-color: #41b3a3;
 }
-.metitle {padding: 80px 0 0 10px;}.metitle a {
+.metitle {padding: 80px 5px 0 10px;}.metitle a {
     position: relative;
     border-style: groove;
     border-color: coral;
@@ -50,7 +50,7 @@ nav a {
 
 
 .chome,.cmc,.cwork,.ccme,.csocial {
-    width: 90%;
+    width: auto;
     height: 100vh;
     padding: 0 0 0 10%;
 }
