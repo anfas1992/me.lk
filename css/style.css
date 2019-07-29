@@ -1,9 +1,9 @@
 *, html {
     margin:0;
     padding:0;  
-}body{
-    
-}
+}html {
+    scroll-behavior: smooth;
+  }
 mark {
     background-color:#68afa8;
     color: currentColor;
@@ -62,7 +62,7 @@ nav a {
     padding: 0 0 0 10%;
 }
 .chome{background-color:  #e27c60;
-    background-image: url(/img/bg.svg);
+    background-image: url("/img/bg.svg");
     background-repeat: repeat-x;
     background-position: center 0, 0 0, 0 0;}
 .cmc{background-color: #7fc6b6;}
@@ -79,4 +79,35 @@ nav a {
     font-size: 4.5vh;
     line-height: 45px;
     letter-spacing: 2px;
+}
+
+.comtitle h1{
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    position: relative;
+    padding: 10% 0 0 30%;
+    font-size: 10vh;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+
+.whatwedo p {
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    position: relative;
+    padding: 5% 5% 0 0;
+    font-size: 3vh;
+    text-align: right;
+    line-height: auto;
+    letter-spacing: auto;
+}
+.comimg{
+    background-image: url("/img/wwd.gif");
+    background-repeat: no-repeat;
+    background-position: -250px -30px;
+    border-radius: 25px;
+    margin: 0 0 0 5%;
+    width: 300px;
+    height: 400px;
+    position: relative;
 }
