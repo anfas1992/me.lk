@@ -1,7 +1,14 @@
 *, html {
     margin:0;
     padding:0;  
+}body{
+    
 }
+mark {
+    background-color:#68afa8;
+    color: currentColor;
+    padding: 10px;
+  }
 .cside{
     width: auto;
     height: 100vh;
@@ -54,9 +61,22 @@ nav a {
     height: 100vh;
     padding: 0 0 0 10%;
 }
-.chome{background-color: #7fc6b6;}
-.cmc{background-color: #e27d60;}
+.chome{background-color:  #e27c60;
+    background-image: url(/img/bg.svg);
+    background-repeat: repeat-x;
+    background-position: center 0, 0 0, 0 0;}
+.cmc{background-color: #7fc6b6;}
 .cwork{background-color: #e8a87c;}
 .ccme{background-color: #c38d9e;}
 .csocial{background-color: #68afa8; height: 50vh !important;}
 
+.chome p {
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: auto;
+    font-size: 4.5vh;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
