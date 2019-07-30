@@ -9,6 +9,12 @@ mark {
     color: currentColor;
     padding: 10px;
   }
+  ::selection {
+    background: #000; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #000; /* Gecko Browsers */
+  }
 .cside{
     width: auto;
     height: 100vh;
@@ -56,7 +62,7 @@ nav a {
 
 
 
-.chome,.cmc,.cwork,.ccme,.csocial {
+.chome,.cmc,.cwork,.ccme,.cfooter {
     width: auto;
     height: 100vh;
     padding: 0 0 0 10%;
@@ -64,11 +70,30 @@ nav a {
 .chome{background-color:  #e27c60;
     background-image: url("/img/bg.svg");
     background-repeat: repeat-x;
-    background-position: center 0, 0 0, 0 0;}
+    background-position: center -150px, 0 0, 0 0;}
 .cmc{background-color: #7fc6b6;}
-.cwork{background-color: #e8a87c;}
+.cwork{background-color: #e8a87c;
+    background-image: url("/img/bg.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -1200px -200px;
+    
+
+
+}
+.welcome{
+    top:20%;
+    right: 20%;
+    position: relative;
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    font-size: 10vh !important;
+    line-height: 50px !important;
+    letter-spacing: 2px;
+}
+
 .ccme{background-color: #c38d9e;}
-.csocial{background-color: #68afa8; height: 50vh !important;}
+.cfooter{background-color: #68afa8; height: 50vh !important;}
 
 .chome p {
     font-family: 'Fira Code', monospace;
@@ -107,8 +132,9 @@ nav a {
     background-position: -250px -30px;
     border-radius: 25px;
     margin: 0 0 0 5%;
+    bottom:25px;
     width: 300px;
-    height: 400px;
+    height: 390px;
     position: relative;
 }
 .worktitle h1{
@@ -121,7 +147,7 @@ nav a {
     letter-spacing: 2px;
 }
 
-
+.cwork{overflow: hidden;}
 .project div{
             width: 40%;
             height: auto;
@@ -133,8 +159,131 @@ nav a {
 }.fade{opacity:0.7;}.fade:hover{opacity:1;}
 
 .project div img {
-    background-size: cover;
+    width:100%;
+    height: auto;
     position: relative;
     margin: 0;
     padding: 0;
+}
+.ccme{
+    background-image: url("/img/bg.svg");
+    background-repeat: no-repeat;
+    
+    background-position: -400px -200px;
+}
+.contacttitle{
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 0 0 0;
+    font-size: 5vh;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+
+.sayhi {
+    width: 700px;
+	padding: 30px;
+	background: none;
+	margin: 50px auto;
+}
+.sayhi input[type="text"],
+.sayhi input[type="date"],
+.sayhi input[type="datetime"],
+.sayhi input[type="email"],
+.sayhi input[type="number"],
+.sayhi input[type="search"],
+.sayhi input[type="time"],
+.sayhi input[type="url"],
+.sayhi input[type="password"],
+.sayhi textarea,
+.sayhi select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+    font: 16px 'Fira Code', monospace;
+    color: #fff;
+	height: 45px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+  }
+.sayhi textarea{
+	resize:none;
+    overflow: hidden;
+    height: 150px;
+    
+}
+.sayhi input[type="button"], 
+.sayhi input[type="submit"]{
+    background-color: #41b3a3;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Fira Code', monospace;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.sayhi input[type="button"]:hover, 
+.sayhi input[type="submit"]:hover {
+    background-color:#34CACA;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+footer{
+    background-color:#68afa8;
+    position: relative;
+    bottom: -0%;
+    color: white;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    font-size: 2.5vh;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+
+.footer_items{
+    display: flex;
+    justify-content: center;
+}
+.theproject,.products,.links {
+    margin: 50px;
+    color: white;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    font-size: 2.5vh;
+    line-height: auto;
+    letter-spacing: 2px;
+    
+}
+.footer_items li>a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style-type: none;
+}
+.flititle{
+    font-size: 4vh;
+    margin-bottom: 20px;
+    border-bottom: 2px #fff solid;
+
 }
