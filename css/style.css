@@ -259,7 +259,10 @@ footer{
     line-height: 45px;
     letter-spacing: 2px;
 }
-
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
 .footer_items{
     display: flex;
     justify-content: center;
